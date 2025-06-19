@@ -1,0 +1,32 @@
+<head>
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $(".hide").click(function(){
+    $(".a").hide();
+    $(".b").hide('fast');
+    $(".c").hide(1500);
+  });
+   $(".show").click(function(){
+    $(".a").show();
+    $(".b").show('slow');
+    $(".c").show(100);
+  });
+  $(".tog").click(function(){
+    $(".a").toggle();
+    
+  });
+});
+</script>
+</head>
+<body>
+    <h3>
+        <p>JQuery Show - Hide - Toggle Effects</p>
+    <p class="a">This is my first verse .</p>  
+    <p class="b">This is my slow verse .</p>   
+    <p class="c">This is my fast verse .</p>   
+    <a href="#" class="show">SHOW</a>
+    <a href="#" class="hide">HIDE</a>
+    <a href="#" class="tog">TOGGLE</a>
+    </h3>
+</body>

@@ -1,0 +1,30 @@
+<head>
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    //$('[title]').css('border','5px solid red');
+   // $('[title="copy"]').css('border','5px solid red');
+   //$('div[title="copy"]').css('border','5px solid red');
+    $('div[title],[style]').css('border','5px solid red');
+
+});
+</script>
+</head>
+
+<body>
+    <h2>
+        <br>
+<div title="copy">
+    This is the first div tag
+</div>
+<br>
+<div title="copy" style="text-decoration:line-through">
+    This is the second div tag
+</div>
+<p title="first">
+    this is the only paragraph tag
+</p>
+<span title="copy">
+    this is the span tag
+</span>
+</body>
